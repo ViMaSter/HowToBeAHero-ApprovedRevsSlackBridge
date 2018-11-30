@@ -1,0 +1,8 @@
+{
+	"@metadata": {
+		"authors": [
+			"Vincent Mahnke"
+		]
+	},
+	"approvedrevsslackbridge-desc": "Bridge sending slack-messages for new page-revisions to be approved."
+}

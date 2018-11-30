@@ -1,0 +1,28 @@
+{
+	"name": "ApprovedRevs Slack Bridge",
+	"version": "0.1.0",
+	"author": [
+		"Vincent Mahnke"
+	],
+	"url": "https://github.com/ViMaSter/HowToBeAHero-ApprovedRevsSlackBridge",
+	"descriptionmsg": "approvedrevsslackbridge-desc",
+	"license-name": "GPL-3.0-or-later",
+	"type": "other",
+	"requires": {
+		"MediaWiki": ">= 1.30.0"
+	},
+	"Hooks": {
+		"PageContentSaveComplete": [
+			"ApprovedRevsSlackBridge::checkSlackNotificationForRequiredApproval"
+		]
+	},
+	"MessagesDirs": {
+		"ApprovedRevsSlackBridge": [
+			"i18n"
+		]
+	},
+	"AutoloadClasses": {
+		"ApprovedRevsSlackBridge": "ApprovedRevsSlackBridge.class.php"
+	},
+	"manifest_version": 1
+}
